@@ -1,0 +1,13 @@
+.ppsection-wrapper{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+.pp-image-wrapper{
+    border-radius: 95px;
+    height: 145px;
+    width: 145px;
+}

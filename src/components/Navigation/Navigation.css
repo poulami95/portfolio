@@ -1,0 +1,16 @@
+.nav-outer-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* margin:0 5px; */
+    align-items: center;
+    height: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #FF8C00;
+    border-bottom: 1px solid #D3D3D3;
+}
+.navigation-section-divider{
+    height: 20px;
+    border: 1px solid #D3D3D3;
+}

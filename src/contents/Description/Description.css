@@ -1,0 +1,58 @@
+.description-wrapper{
+    margin: 15px;
+    color: #FF8C00;
+    display: flex;
+    text-align: left;
+    height: 60vh;
+    flex-flow: column;
+}
+.static-text{
+    font-size:40px;
+    font-weight: 400;
+}
+.dynamic-text{
+    overflow: hidden;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.dynamic-text li{
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    top:0;
+    animation: slide 8s steps(3) infinite;
+}
+@keyframes slide {
+    100%{
+      top:-120px
+    }
+}
+.dynamic-text li::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #FFFDD0;
+    border-left: 1px solid #FF8C00;
+    animation: typing 3s steps(20) infinite;
+}
+@keyframes typing {
+    100%{
+      left:100%;  
+      margin:0 -15px 0 15px;
+    }
+}
+.blinking-cursor::after{
+    content:"|";
+    color: #FF8C00;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
